@@ -1,0 +1,101 @@
+:root {
+    --soft-blue: rgb(0, 106, 243);
+}
+/* ------------- Fonts ---------------- */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* ------------- Shape Styling ---------------- */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Base shape */
+.shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Soft blue circle */
+.shape-circle {
+  width: 500px;
+  height: 500px;
+  background-color: var(--soft-blue);
+  border-radius: 50%;
+  opacity: 0.18;
+  top: -150px;
+  right: -220px;
+}
+
+/* Black square */
+.shape-square {
+  width: 300px;
+  height: 300px;
+  background-color: #000000;
+  opacity: 0.08;
+  top: 100px;
+  right: 150px;
+  border-radius: 5px;
+}
+
+/* Keep text above shapes */
+h1, .hero-subtext {
+  position: relative;
+  z-index: 2;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.shape-circle {
+  animation: float 8s ease-in-out infinite;
+}
+
+.shape-square {
+  animation: float 10s ease-in-out infinite;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+/* ------------- Text Styling ---------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+p button a{
+    font-family: "Roboto", sans-serif;
+}
+/* ------------- Nav Styling ---------------- */
+.navbar {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
