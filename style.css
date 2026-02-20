@@ -91,9 +91,10 @@ h1, .hero-subtext {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
 }
-p button a{
+p button a li{
     font-family: "Roboto", sans-serif;
 }
+
 /* ------------- Nav Styling ---------------- */
 .navbar {
     background-color: rgb(255, 255, 255);
@@ -102,3 +103,44 @@ p button a{
 .active {
     font-weight: bold;
 }
+
+/* ------------- About Page Styling ---------------- */
+.col {
+    margin-bottom: 15px;
+}
+
+.about-section h2 {
+  border-left: 4px solid #7da9d9;
+  padding-left: 15px;
+}
+img {
+    width: 100%;
+    max-width: 450px;
+}
+.about-section {
+  position: relative;
+}
+
+/* Headshot wrapper */
+.headshot-wrapper {
+  position: relative;
+  z-index: 2;
+  /* max-width: 400px; */
+}
+
+/* Make image feel polished */
+.headshot-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
